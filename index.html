@@ -48,26 +48,35 @@
             position: relative;
             z-index: 1; /* Ensures content appears above the overlay */
             max-width: 800px;
+            padding: 30px; /* Added padding around the content */
+        }
+
+        /* Logo styling */
+        .logo img {
+            height: 200px; /* Set a fixed height for the logo */
+            max-width: 100%; /* Ensure it doesn't overflow horizontally */
+            object-fit: contain; /* Ensure aspect ratio is maintained */
+            margin-bottom: 30px; /* Space below the logo */
         }
 
         /* Main Title Styling */
         h1 {
             font-size: 3.5em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 20px; /* More space below the main title */
         }
 
-        /* Subtitle Styling */
+        /* Subtitle Styling - Smaller text */
         h2 {
-            font-size: 1.5em;
+            font-size: 1.2em; /* Made the subtitle smaller */
             margin-bottom: 20px;
         }
 
-        /* Text for "under construction" */
+        /* Text for "under construction" - Smaller text and line spacing */
         .under-construction {
-            font-size: 1em;
+            font-size: 0.9em; /* Smaller size for this section */
+            line-height: 1.6;
             margin-bottom: 30px;
-            line-height: 1.6; /* Better paragraph spacing */
         }
 
         /* Contact details */
@@ -116,6 +125,10 @@
             .contact-details {
                 font-size: 1em;
             }
+
+            .logo img {
+                height: 150px; /* Slightly smaller height for mobile */
+            }
         }
     </style>
 </head>
@@ -123,15 +136,20 @@
 
     <!-- Content section -->
     <div class="content">
-        <!-- Main Title -->
-        <h1>Icefall Productions</h1>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/icefall-production_white.png" alt="Icefall Productions Logo">
+        </div>
+
+        <!-- Main Title
+        <h1>Icefall Productions</h1> -->
 
         <!-- Subtitle -->
         <h2>We Are Tuning Something Amazing for You!</h2>
 
         <!-- Under Construction Text -->
         <div class="under-construction">
-            Our site is currently under construction, but we are working hard to bring you the new design.
+            Our site is currently under construction.
         </div>
 
         <!-- Contact details -->
