@@ -46,14 +46,6 @@
             pointer-events: none; /* Allows clicking through the overlay */
         }
 
-        /* Content that appears above the background */
-        .content {
-            position: relative;
-            z-index: 1; /* Ensures content appears above the overlay */
-            max-width: 800px;
-            padding: 30px; /* Added padding around the content */
-        }
-
         /* Logo at the top left */
         .logo {
             position: absolute;
@@ -62,7 +54,7 @@
         }
 
         .logo img {
-            height: 100px;
+            height: 80px; /* Adjusted for responsiveness */
             object-fit: contain;
         }
 
@@ -73,10 +65,11 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            font-size: 4em; /* Larger font size for prominence */
-            font-family: 'Pacifico', cursive; /* Applying stylish font */
+            font-size: 4em;
+            font-family: 'Pacifico', cursive; /* Stylish font */
             font-weight: bold;
             margin-bottom: 30px;
+            white-space: nowrap; /* Prevents text from breaking on mobile */
         }
 
         /* Contact details and company name at bottom right */
@@ -85,11 +78,11 @@
             bottom: 60px;
             right: 20px;
             text-align: right;
-            font-size: 1.5em; /* Increased font size */
+            font-size: 1.2em; /* Increased font size */
         }
 
         .contact-details p {
-            margin-bottom: 20px; /* More margin between text */
+            margin-bottom: 10px; /* Increased margin between text */
         }
 
         .contact-details a {
@@ -103,17 +96,67 @@
             display: flex;
             justify-content: flex-end;
             margin-right: 20px;
-            margin-top: 20px; /* Added margin above social media */
+            margin-top: 20px;
         }
 
         .social li {
-            margin: 0 15px; /* Increased space between icons */
+            margin: 0 10px; /* Increased space between icons */
         }
 
         .social a {
             color: #ffffff;
-            font-size: 2.5em; /* Increased icon size */
+            font-size: 2.5em; /* Larger icon size */
             text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            /* Logo on smaller screens */
+            .logo img {
+                height: 60px;
+            }
+
+            /* Adjusting font size for smaller screens */
+            .coming-soon {
+                font-size: 3em; /* Adjusted font size */
+                white-space: normal; /* Allows text to break */
+                line-height: 1.2; /* Improved spacing */
+            }
+
+            .contact-details {
+                font-size: 1em; /* Smaller font for mobile */
+                text-align: center; /* Centered contact details */
+                bottom: 100px; /* Moved up slightly */
+            }
+
+            /* Social media icons centered for mobile */
+            .social {
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .social li {
+                margin: 0 8px; /* Reduced margin between icons */
+            }
+
+            .social a {
+                font-size: 2em; /* Smaller icon size for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Further adjustments for very small screens */
+            .coming-soon {
+                font-size: 2.5em; /* Smaller font size */
+            }
+
+            .contact-details {
+                font-size: 0.9em; /* Adjust contact details size */
+            }
+
+            .social a {
+                font-size: 1.8em; /* Adjusted icon size */
+            }
         }
     </style>
 </head>
