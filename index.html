@@ -61,24 +61,25 @@
         /* "Coming Soon" text in the center */
         .coming-soon {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            font-size: 4em;
+            font-size: 3.5em; /* Adjust font size for better fit */
             font-family: 'Pacifico', cursive; /* Stylish font */
             font-weight: bold;
             margin-bottom: 30px;
-            white-space: nowrap; /* Prevents text from breaking on mobile */
+            white-space: nowrap; /* Prevent text from breaking */
         }
 
         /* Contact details and company name at bottom right */
         .contact-details {
             position: absolute;
-            bottom: 60px;
-            right: 20px;
-            text-align: right;
-            font-size: 1.2em; /* Increased font size */
+            bottom: 90px;
+            right: 20px; /* Move to the right */
+            text-align: right; /* Align text to the right */
+            font-size: 1.3em; /* Slightly increased for visibility */
+            line-height: 1.4; /* Increased line height for better spacing */
         }
 
         .contact-details p {
@@ -94,18 +95,18 @@
         .social {
             list-style-type: none;
             display: flex;
-            justify-content: flex-end;
-            margin-right: 20px;
-            margin-top: 20px;
+            justify-content: flex-end; /* Align to the right */
+            margin-top: 15px;
+            margin-right: 20px; /* Match the right margin with contact details */
         }
 
         .social li {
-            margin: 0 10px; /* Increased space between icons */
+            margin: 0 15px; /* Increased space between icons */
         }
 
         .social a {
             color: #ffffff;
-            font-size: 2.5em; /* Larger icon size */
+            font-size: 2.7em; /* Slightly larger icon size */
             text-decoration: none;
         }
 
@@ -118,29 +119,28 @@
 
             /* Adjusting font size for smaller screens */
             .coming-soon {
-                font-size: 3em; /* Adjusted font size */
+                font-size: 2.8em; /* Adjusted font size */
                 white-space: normal; /* Allows text to break */
                 line-height: 1.2; /* Improved spacing */
             }
 
             .contact-details {
-                font-size: 1em; /* Smaller font for mobile */
-                text-align: center; /* Centered contact details */
+                font-size: 1.1em; /* Smaller font for mobile */
                 bottom: 100px; /* Moved up slightly */
+                right: 10px; /* Adjusted for small screens */
             }
 
-            /* Social media icons centered for mobile */
+            /* Social media icons aligned to the right for mobile */
             .social {
-                justify-content: center;
-                margin-top: 10px;
+                margin-right: 10px; /* Adjust right margin for mobile */
             }
 
             .social li {
-                margin: 0 8px; /* Reduced margin between icons */
+                margin: 0 10px; /* Reduced margin between icons */
             }
 
             .social a {
-                font-size: 2em; /* Smaller icon size for mobile */
+                font-size: 2.5em; /* Smaller icon size for mobile */
             }
         }
 
@@ -151,11 +151,11 @@
             }
 
             .contact-details {
-                font-size: 0.9em; /* Adjust contact details size */
+                font-size: 1em; /* Adjust contact details size */
             }
 
             .social a {
-                font-size: 1.8em; /* Adjusted icon size */
+                font-size: 2.2em; /* Adjusted icon size */
             }
         }
     </style>
@@ -176,7 +176,7 @@
     <div class="contact-details">
         <p><strong>Icefall Productions Pvt. Ltd.</strong></p>
         <p>Email: <a href="mailto:info@icefallproductions.com">info@icefallproductions.com</a></p>
-        <p>Phone: <a href="tel:+97715312622">+977 1 5312622</a> / <a href="tel:+9779851073904">+977-9851073904</a></p>
+        <p>Phone: +977 1 5312622 / +977-9851073904</p>
 
         <!-- Social media icons -->
         <ul class="social">
