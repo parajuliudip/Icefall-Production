@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Icefall Productions - Under Construction</title>
+    <title>Icefall Productions - Coming Soon</title>
 
     <!-- Include font awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,8 +17,8 @@
             box-sizing: border-box;
         }
 
-        /* Set background with a single overlay */
-        body {
+  /* Set background with a single overlay */
+  body {
             font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
@@ -51,42 +51,29 @@
             padding: 30px; /* Added padding around the content */
         }
 
-        /* Logo styling */
+        /* Logo at the top left */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
         .logo img {
-            height: 200px; /* Set a fixed height for the logo */
-            max-width: 100%; /* Ensure it doesn't overflow horizontally */
-            object-fit: contain; /* Ensure aspect ratio is maintained */
-            margin-bottom: 30px; /* Space below the logo */
+            height: 100px; /* Adjust the size as needed */
+            object-fit: contain;
         }
 
-        /* Main Title Styling */
-        h1 {
-            font-size: 3.5em;
-            font-weight: bold;
-            margin-bottom: 20px; /* More space below the main title */
-        }
-
-        /* Subtitle Styling - Smaller text */
-        h2 {
-            font-size: 1.2em; /* Made the subtitle smaller */
-            margin-bottom: 20px;
-        }
-
-        /* Text for "under construction" - Smaller text and line spacing */
-        .under-construction {
-            font-size: 0.9em; /* Smaller size for this section */
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        /* Contact details */
+        /* Contact details and company name at bottom right */
         .contact-details {
+            position: absolute;
+            bottom: 60px;
+            right: 20px;
+            text-align: right;
             font-size: 1.2em;
-            margin-bottom: 30px; /* Added more spacing between paragraphs */
         }
 
         .contact-details p {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .contact-details a {
@@ -94,71 +81,40 @@
             text-decoration: none;
         }
 
-        /* Social media icons */
+        /* Social media icons below the contact details */
         .social {
             list-style-type: none;
             display: flex;
-            justify-content: center;
-            margin-top: 30px;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 10px;
         }
 
         .social li {
-            margin: 0 15px;
+            margin: 0 10px;
         }
 
         .social a {
             color: #ffffff;
-            font-size: 2em; /* Increased icon size */
+            font-size: 2em;
             text-decoration: none;
-        }
-
-        /* Responsive for smaller devices */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-
-            .contact-details {
-                font-size: 1em;
-            }
-
-            .logo img {
-                height: 150px; /* Slightly smaller height for mobile */
-            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Content section -->
-    <div class="content">
-        <!-- Logo -->
-        <div class="logo">
-            <img src="images/icefall-production_white.png" alt="Icefall Productions Logo">
-        </div>
+    <!-- Logo at the top left -->
+    <div class="logo">
+        <img src="images/icefall-production_white.png" alt="Icefall Productions Logo">
+    </div>
 
-        <!-- Main Title
-        <h1>Icefall Productions</h1> -->
+    <!-- Contact details and company name at the bottom right -->
+    <div class="contact-details">
+        <p><strong>Icefall Productions Pvt. Ltd.</strong></p>
+        <p>Email: <a href="mailto:info@icefallproductions.com">info@icefallproductions.com</a></p>
+        <p>Phone: <a href="tel:+97715312622">+977 1 5312622</a> / <a href="tel:+9779851073904">+977-9851073904</a></p>
 
-        <!-- Subtitle -->
-        <h2>We Are Tuning Something Amazing for You!</h2>
-
-        <!-- Under Construction Text -->
-        <div class="under-construction">
-            Our site is currently under construction.
-        </div>
-
-        <!-- Contact details -->
-        <div class="contact-details">
-            <p>Email: <a href="mailto:info@icefallproductions.com">info@icefallproductions.com</a></p>
-            <p>Phone: <a href="tel:+97715312622">+977 1 5312622</a> / <a href="tel:+9779851073904">+977-9851073904</a></p>
-        </div>
-
-        <!-- Social media handles with icons -->
+        <!-- Social media icons -->
         <ul class="social">
             <li><a href="https://www.facebook.com/icefallproductions" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://www.instagram.com/icefallproductions" target="_blank"><i class="fab fa-instagram"></i></a></li>
